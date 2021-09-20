@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navbar-wrapper .site-link .site-title-link {
+  font-size: 22px;
+}
+
+.navbar-wrapper .wrapper {
+  margin-left: auto;
+}
+/*# sourceMappingURL=olx.css.map */

@@ -14,6 +14,10 @@ img {
   max-width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
 .navbar-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,5 +42,35 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navbar-wrapper .wrapper .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-wrapper .wrapper .language span {
+  width: 2px;
+  height: 20px;
+  background-color: gray;
+}
+
+.navbar-wrapper .wrapper .my-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=olx.css.map */

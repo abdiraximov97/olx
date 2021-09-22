@@ -3,7 +3,6 @@ const express = require("express");
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const path = require("path");
-const databaseMiddleware = require("./middlewares/databaseMiddleware");
 const routes = require("./routes/routes");
 const mongo = require("./modules/mongoose");
 
@@ -24,7 +23,6 @@ async function server(mode) {
         app.use(express.urlencoded({ extended: true }));
 
         app.use(express.static(path.join(__dirname, "public")));
-        app.use(databaseMiddleware);
 
         await mongo();
 

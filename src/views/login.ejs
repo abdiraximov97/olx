@@ -4,12 +4,14 @@
 <section class="login-section">
     <div class="container">
         <div class="login">
+
             <div class="login-header">
                 <a href="" class="login-link">Kirish</a>
                 <a href="" class="reg-link">Royxatdan o'tish</a>
             </div>
-            <div class="login-main">
-                <form class="login-form">
+
+            <div class="login-main row">
+                <form action="login" class="login-form col-12 col-lg-6">
                     <div class="input-group">
                         <input type="email" name="email" id="email" required>
                         <label for="email">Email</label>
@@ -19,15 +21,26 @@
                         <label for="password">Parol</label>
                     </div>
                     <a href="" class="forgot-password">Parolni unutdizgizmi?</a>
-                    <button class="enter-btn">Kirish</button>
+                    <button class="btn btn-primary enter-btn">Kirish</button>
                 </form>
-                <form class="reg-form">
+
+                <form action="registration" class="registration-form">
                     <div class="input-group">
-                        <input type="email" name="regEmail" id="regEmail" required>
+                        <input type="email" name="email" id="regEmail" required>
                         <label for="regEmail">Email</label>
                     </div>
+                    <div class="input-group">
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">Ismingiz</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="regPassword" id="regPassword" required>
+                        <label for="regPassword">Parol</label>
+                    </div>
                 </form>
+
             </div>
+
         </div>
     </div>
 </section>

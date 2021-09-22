@@ -3,9 +3,10 @@ const { UserRegistrationGetController } = require("../controllers/userRouteContr
 
 const router = require("express").Router();
 
-router.get("/", UserRegistrationGetController);
+router.get("/login", UserRegistrationGetController);
+router.get("/registration", UserRegistrationGetController);
 
 module.exports = {
-    path: "/login",
+    path: "/users",
     router,
 }

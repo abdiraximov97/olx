@@ -1,0 +1,43 @@
+<%- include("parts/_header") %> 
+<% var error %> 
+
+
+<section class="login-section">
+    <div class="container">
+        <div class="login">
+
+            <div class="login-header">
+                <a href="" class="reg-link">Royxatdan o'tish</a>
+            </div>
+
+            <div class="login-main row">
+                <% if(error) {%> 
+                    <div class="alert alert-danger">
+                        <%= error %> 
+                    </div>
+                <% } %> 
+
+                <form method="POST" class="registration-form col-12 col-lg-6">
+                    <div class="input-group">
+                        <input class="form-control" type="email" name="email" id="regEmail" required>
+                        <label for="regEmail">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="name" id="name" required>
+                        <label for="name">Ismingiz</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="form-control" type="password" name="password" id="password" required>
+                        <label for="password">Parol</label>
+                    </div>
+                    <button class="btn btn-success " type="submit">Ro'yxatdan o'tish</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- <%- include("parts/footer") %>  -->
+<%- include("parts/_footer") %> 
